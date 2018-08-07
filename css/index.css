@@ -45,6 +45,7 @@ nav .brand-logo {
     color: #888888;
 }
 
+
 .nav-details {
     /* background-color: tomato; */
     flex-basis: 50%;
@@ -160,7 +161,7 @@ nav .brand-logo {
     align-items: center;
     color: white;
     font-size: 4em;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: 'Hammersmith One', sans-serif;
     text-align: center;
 }
 
@@ -232,7 +233,7 @@ nav .brand-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.7em;
+    font-size: 3.7em;
     font-weight: lighter;
     color: gray;
     /* background-color: teal; */
@@ -351,6 +352,7 @@ nav .brand-logo {
     overflow: hidden;
     border-radius: 5px;
     background-color: #303030;
+    /*background-color: #140699;*/
     width: 100vw;
 }
 
