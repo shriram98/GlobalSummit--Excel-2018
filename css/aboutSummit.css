@@ -1,0 +1,54 @@
+
+.sheading{
+    font-size:60px;
+    text-align:center;
+    margin-top:80px;
+    margin-bottom:60px;
+}
+.sintro{
+    padding:20px;
+    margin-left:15%;
+    margin-right:15%;
+    font-size:20px;
+    text-align:center;
+    margin-bottom:50px;
+}
+.squote{
+    background-image:url("../assets/globe.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+    font-size:40px;
+    color:white;
+    text-align:center;
+    font-family:verdana;
+}
+.sabout{
+    font-size:20px;
+    text-align:left;
+    padding:50px;
+    padding-left:15%;
+    padding-right:15%;
+    padding-bottom:90px;
+    color:white;
+    background-color:rgba(0,0,0,.2);
+}
+.sdarkbg{
+    background-color:rgba(0,0,0,.5);
+    padding:20px;
+    padding-top:100px;
+    padding-bottom:100px;   
+}
+.saboutbg{
+    background-image: linear-gradient(to right top, #787878, #5e5e5e, #454545, #2e2e2e, #181818);
+}
+.tracks{
+    font-size:20px;
+    padding:20px;
+    padding-left:15%;
+    padding-right:15%;
+    padding-bottom:100px;
+}
+.sbig{
+    font-size:50px;
+    text-align:center;
+}
