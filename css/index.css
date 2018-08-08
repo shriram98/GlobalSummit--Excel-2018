@@ -374,7 +374,7 @@ nav .brand-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.7em;
+    font-size: 3em;
     font-weight: lighter;
     color: gray;
     /* background-color: teal; */
@@ -387,11 +387,10 @@ nav .brand-logo {
 
 .attendeeDetailDiv {
     height: auto;
-    width: 70%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    /* background-color: tomato; */
+	margin: auto;
+	/* background-color: tomato; */
+	display: grid;
+	grid-template-columns: auto auto auto;
 }
 
 .row {
@@ -555,24 +554,42 @@ hr {
 
 /* Media queries */
 
-/* very small phone Iphone SE */
+/*ipad potrait grids*/
 
-@media only screen and (max-width: 320px) {
-    .India {
-        font-size: 15px;
+@media only screen and (max-width: 805px) {
+    .imagesDiv {
+        height: auto;
+        background-color: #EFEFEF;
+        display: grid;
+        grid-template-columns: auto;
     }
-    .Global {
-        font-size: 35px;
-        text-align: center;
+    .top-left {
+        background-image: url('../assets/left_image.jpg');
+        background-size: cover;
+        grid-column: auto;
+        height: 35vh;
     }
-    .globalContent {
-        font-size: 15px;
+    .top-right {
+        background-image: url('../assets/right_image.jpg');
+        background-size: cover;
+        grid-column: auto;
+        height: 40vh;
     }
-    .globalDiv button {
-        width: auto;
+    .bottom-mid {
+        background-image: url('../assets/middle_image.jpg');
+        background-size: cover;
+        grid-column: auto;
+        height: 40vh;
+    }
+    .quote-section {
+        height: 35vh;
+        grid-column: auto;
+        color: white;
+    }
+    .attendeeDetailDiv {
+        grid-template-columns: auto auto;
     }
 }
-
 /* iphone 6s and 6s+*/
 
 @media only screen and (max-width: 420px) {
@@ -638,69 +655,79 @@ hr {
         grid-column: auto;
         color: white;
     }
-}
-
-/*ipad potrait grids*/
-
-@media only screen and (max-width: 805px) {
-    .imagesDiv {
-        height: auto;
-        background-color: #EFEFEF;
-        display: grid;
+    .attendeeDetailDiv {
         grid-template-columns: auto;
     }
-    .top-left {
-        background-image: url('../assets/left_image.jpg');
-        background-size: cover;
-        grid-column: auto;
-        height: 35vh;
-    }
-    .top-right {
-        background-image: url('../assets/right_image.jpg');
-        background-size: cover;
-        grid-column: auto;
-        height: 40vh;
-    }
-    .bottom-mid {
-        background-image: url('../assets/middle_image.jpg');
-        background-size: cover;
-        grid-column: auto;
-        height: 40vh;
-    }
-    .quote-section {
-        height: 35vh;
-        grid-column: auto;
-        color: white;
+
+    .attendeeHead{
+        font-size: 2.4em;
     }
 }
+
+/* very small phone Iphone SE */
+
+@media only screen and (max-width: 320px) {
+    .India {
+        font-size: 15px;
+    }
+    .Global {
+        font-size: 35px;
+        text-align: center;
+    }
+    .globalContent {
+        font-size: 15px;
+    }
+    .globalDiv button {
+        width: auto;
+    }
+}
+
 
 /*Track*/
 /* TRACK CONTACT */
 .trackContacts{
     margin-top: 4em;
-    margin-bottom: 7em;
-    height: 80vh;
+    margin-bottom: 4em;
+    height: auto;
     width: 100vw;
     position: relative;
     padding: 1em;
-    display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: teal; */
 }
 
 .trackContacts > div{
-    height: 100%;
-    width: 100%;
     text-align: center;
     color: tomato;
     display: grid;
-    grid-template-rows: 25% 75%;
-    grid-template-columns: auto;
-    padding: 1em;
 }
 
-.trackContactDetails{
-    display: flex;
-    justify-content: center;
+.trackContactDetails {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: auto auto auto;
+}
+
+/* meadia query for the trackcontacts */
+
+@media only screen and (max-width:450px){
+    .trackContacts {
+        height: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .trackContactDetails {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto;
+    }
+    .portrait > img {
+        width: 175px;
+        border-radius: 175px;
+    }
+    .portrait{
+        font-size: 15px;
+        padding: 10px;
+    }
 }
