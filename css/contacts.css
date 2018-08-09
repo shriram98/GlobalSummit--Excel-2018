@@ -37,7 +37,13 @@ body{
     padding:20px;
 }
 .contact > img{
-    width:300px;
-    border-radius:300px;
+    width:250px;
+    border-radius:2500px;
 }
 
+@media only screen and (max-width:450px){
+    .contact > img {
+        width: 175px;
+        border-radius: 175px;
+    }
+}
