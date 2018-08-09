@@ -2,7 +2,7 @@ body{
     overflow-x: hidden;
 }
 
-
+ 
 .track1{
     background: url('../assets/track1Head.jpg');
     background-size: cover;
@@ -49,6 +49,7 @@ body{
     align-items: center;
     width: 100%;
     color: white;
+    text-align: center;
 }
 
 
@@ -139,16 +140,15 @@ background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, F
 
 /* SPEAKER PANEL */
 .speakerPanel{
-    margin-top: 4em;
     margin-bottom: 4em;
     position: relative;
     /* background-color: teal; */
     height: auto;
     width: 100vw;
     padding: 1em;
-    display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
 }
 
@@ -157,14 +157,42 @@ background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, F
     width: 100%;
     /* background-color: yellow; */
     text-align: center;
-    color: gray;
-    padding: 1em;
+    /*color: gray;
+    padding: 1em;*/
     display: grid;
-    grid-template-rows: 25% 75%;
     grid-template-columns: auto;
 }
-.speakerPanel > div > h3{
+.speakerPanel > h3{
     color: tomato;
+    font-size: 4em;
+}
+
+.speakerPanelDouble{
+    margin-bottom: 4em;
+    position: relative;
+    /* background-color: teal; */
+    height: auto;
+    width: 100vw;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.speakerPanelDouble > div{
+    height: auto;
+    width: 100%;
+    /* background-color: yellow; */
+    text-align: center;
+    /*color: gray;
+    padding: 1em;*/
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.speakerPanelDouble > h3{
+    color: tomato;
+    font-size: 4em;
 }
 
 
@@ -172,33 +200,25 @@ background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, F
     /* background-color: tomato; */
     height: 100%;
     width: 100%;
-    display: grid;
+    /*display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 40% 60%;
-}
-
-.speakerImage{
-    /* background-color: blue; */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;    
+    grid-template-columns: 40% 60%;*/
 }
 
 .speakerImage > img{
     background-size: cover;
     border-radius: 50%;
-    width: 55%;
-    height: 80%;
+    width: 250px;
+    height: 250px;
 }
 
 .speakerDetails{
     /* background-color: brown; */
-    padding: 7em;
     text-align: center;
 }
 
 .speakerName{
-    font-size: 3.5em;
+    font-size: 3em;
 }
 
 .speakerDesig{
@@ -206,8 +226,75 @@ background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, F
 }
 
 
+/* iphone 6s and 6s+*/
 
+@media only screen and (max-width: 420px) {
 
+    .trackHead {
+        font-size: 3em;
+    }
+    
+
+    .speakerPanel > h3 {
+        color: tomato;
+        font-size: 2.5em;
+    }
+    .speakerImage > img {
+        width: 180px;
+        height: 180px;
+    }
+    .speakerName {
+        font-size: 2em;
+    }
+    .speakerDesig {
+        font-size: 15px;
+    }
+    .aboutTrack {
+        padding: 0px;
+    }
+    .speakerPanelDouble > div {
+        height: auto;
+        width: 100%;
+        /* background-color: yellow; */
+        text-align: center;
+        /* color: gray; */
+        /* padding: 1em; */
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+    }
+}
+/* iphone se*/
+@media only screen and (max-width: 320px) {
+    .track3Head{
+        font-size: 2.6em;
+    }
+    .trackKochi {
+        font-size: 15px;
+    }
+    .trackHead {
+        font-size: 2.4em;
+    }
+    .trackDesc {
+        font-size: 15px;
+        padding-top: 50px;
+    }
+    h3 {
+        font-size: 2.4em;
+        line-height: 110%;
+        margin: 1.9466666667rem 0 1.168rem 0;
+    }
+    .aboutTrack {
+        padding: 0px;
+    }
+   
+}
+
+/*ipad potrait grids*/
+
+@media only screen and (max-width: 805px) {
+ 
+}
 
 
 
