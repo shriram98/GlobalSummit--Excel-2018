@@ -101,6 +101,50 @@ nav .brand-logo {
     display: block;
 }
 
+.ham-icon {
+    display:  none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navBar {
+        height: auto;
+        width: 100%;
+    }
+
+    .nav-details {
+        display: none;
+        padding-top: 60px; 
+        flex-direction: column-reverse;
+        height: auto;
+        width: 100%;
+    }
+
+    .ham-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 30px;
+    }
+
+    .toggleMenu {
+        display: flex;
+    }
+
+    .dropdown {
+        position: unset;
+    }
+    .dropDown-content {
+        position: unset;
+        margin-left: 30%;
+        box-shadow: none;
+    }
+
+    .dropDown-content--Show {
+        display: block;
+    }
+}
+
 /* HomeDiv */
 
 .HomeDiv {
