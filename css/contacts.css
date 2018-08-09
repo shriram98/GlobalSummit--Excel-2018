@@ -12,20 +12,6 @@ body{
 
 
 /* Style the container/contact section */
-.map-box {
-    color: white;
-    height: 100vh;
-    padding-top: 10px;
-    position: adaptive;
-    left: 0;
-    border-radius: 5px;
-    background-color: #303030;
-    width: 100vw;
-}
-
-#map{
-    padding-bottom: 10rem;
-}
 .contactpanel{
     display:flex;
     justify-content: center;
